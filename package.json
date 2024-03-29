@@ -1,0 +1,15 @@
+{
+    "type": "module",
+    "scripts": {
+        "test": "node testsRun/testsRun.js",
+        "import-build-tests": "node ./testsAutoImporter.cjs",
+        "tests-esbuild-watch": "esbuild ./testsAutoImport.js --watch --bundle --charset=utf8  --global-name=tests --outfile=src/testsAutoImport/tests.js",
+        "import-build-tests-watch": "nodemon --exec npm run import-build-tests -e js --watch src --ignore testsAutoImport.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.7",
+        "clasp": "^1.0.0",
+        "esbuild": "^0.20.0",
+        "nodemon": "^3.1.0"
+    }
+}

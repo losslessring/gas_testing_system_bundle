@@ -1,0 +1,4 @@
+{
+    "developmentDeployUrl": "https://script.google.com/macros/s/YourDeployId/dev",
+    "accessToken": "YourAccessToken"
+}
